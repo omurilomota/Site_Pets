@@ -1,59 +1,1121 @@
+# 🚀 **HTML COMPLETO E DEFINITIVO - PETLOVE PREMIUM**
+
+```html
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<html lang="pt-BR">
+<head>
+  <!-- Meta Tags Essenciais -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="PetLove - Centro de Adoção e Cuidados para Pets | São Paulo">
+  <meta name="description" content="Adote um pet, serviços de banho e tosa, veterinário 24h. Mais de 1500 pets adotados. Cuidamos do seu melhor amigo com amor e dedicação desde 2008.">
+  <meta name="keywords" content="adoção de pets, petshop, veterinário, banho e tosa, cuidados com pets, adotar cachorro, adotar gato, pet shop são paulo">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Portuguese">
+  <meta name="author" content="PetLove">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://petlove.com.br/">
+  <meta property="og:title" content="PetLove - Adoção e Cuidados para Pets">
+  <meta property="og:description" content="Encontre seu novo melhor amigo ou cuide do seu pet com nossos serviços premium.">
+  <meta property="og:image" content="https://petlove.com.br/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://petlove.com.br/">
+  <meta property="twitter:title" content="PetLove - Centro de Adoção e Cuidados">
+  <meta property="twitter:description" content="Adote um pet ou cuide do seu amigo com amor.">
+  <meta property="twitter:image" content="https://petlove.com.br/images/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <!-- Título -->
+  <title>PetLove - Centro de Adoção e Cuidados Premium para Pets | São Paulo</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <header>
-            <h1>Bem-vindo ao pet center!</h1>
-        </header>
+<body>
+  <!-- Preloader Animado -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="paw-loader">
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+      </div>
+      <p>Preparando tudo com carinho...</p>
+      <div class="preloader-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
 
-        <div class="nav">
+  <!-- Header Principal -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo" data-aos="fade-right">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-text">PetLove</span>
+      </div>
+      
+      <div class="header-actions">
+        <!-- Contador de Favoritos -->
+        <button class="favorites-btn" aria-label="Ver favoritos">
+          <i class="fas fa-heart"></i>
+          <span class="favorites-count" id="favorites-count">0</span>
+        </button>
+        
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        
+        <!-- Menu Hambúrguer Mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+      
+      <!-- Navegação Principal -->
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#sobre" class="nav-link"><i class="fas fa-info-circle"></i> Sobre</a></li>
+          <li><a href="#pets" class="nav-link"><i class="fas fa-paw"></i> Pets</a></li>
+          <li><a href="#servicos" class="nav-link"><i class="fas fa-cut"></i> Serviços</a></li>
+          <li><a href="#funcionarios" class="nav-link"><i class="fas fa-users"></i> Equipe</a></li>
+          <li><a href="#galeria" class="nav-link"><i class="fas fa-images"></i> Galeria</a></li>
+          <li><a href="#depoimentos" class="nav-link"><i class="fas fa-star"></i> Depoimentos</a></li>
+          <li><a href="#blog" class="nav-link"><i class="fas fa-newspaper"></i> Blog</a></li>
+          <li><a href="#faq" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+          <li><a href="#contato" class="nav-link"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <nav id="servicos">Serviços</nav>
-            <nav id="pets">Pets</nav>
-            <nav id="sobre">Sobre</nav>
-            <nav id="contato">Contato</nav>
-            <nav id="login">Login</nav>
+  <!-- Seção Hero Principal -->
+  <section id="home" class="hero">
+    <div class="hero-bg-animation">
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+      <div class="hero-particle"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">🏆 Centro de Adoção Nº1 de São Paulo</span>
+        <h1 class="hero-title">Encontre o Seu <span class="highlight">Melhor Amigo</span></h1>
+        <p class="hero-description">
+          Transforme uma vida e ganhe um companheiro fiel. Mais de 1500 pets já encontraram
+          um lar cheio de amor através da PetLove.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="#pets" class="btn btn-primary">
+            <i class="fas fa-heart"></i> Quero Adotar
+          </a>
+          <a href="#servicos" class="btn btn-secondary">
+            <i class="fas fa-sparkles"></i> Nossos Serviços
+          </a>
+          <button class="btn btn-play" id="play-video">
+            <i class="fas fa-play"></i> Ver Vídeo
+          </button>
+        </div>
+        
+        <!-- Estatísticas Animadas -->
+        <div class="hero-stats">
+          <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-home stat-icon"></i>
+            <span class="stat-number" data-target="1547">0</span>
+            <span class="stat-label">Pets Adotados</span>
+          </div>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-users stat-icon"></i>
+            <span class="stat-number" data-target="3264">0</span>
+            <span class="stat-label">Clientes Felizes</span>
+          </div>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-award stat-icon"></i>
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-star stat-icon"></i>
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-label">% Satisfação</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down">
+        <span>Role para baixo</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre Nós Completa -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sobre Nós</span>
+        <h2 class="section-title">Por Que Escolher a PetLove?</h2>
+        <p class="section-subtitle">Somos apaixonados por animais e comprometidos com seu bem-estar</p>
+      </div>
+      
+      <div class="sobre-content">
+        <div class="sobre-image" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800" alt="Cachorro feliz sendo abraçado">
+          <div class="sobre-image-overlay">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="sobre-badge">
+            <span class="badge-number">15+</span>
+            <span class="badge-text">Anos de Amor</span>
+          </div>
+        </div>
+        
+        <div class="sobre-texto" data-aos="fade-left">
+          <h3>Transformando Vidas Através do Amor</h3>
+          <p class="lead">
+            A adoção não é apenas um ato de bondade; é uma parceria de vida que transforma
+            tanto o pet quanto a família que o recebe. Cada animal resgatado representa
+            uma história de superação e esperança.
+          </p>
+          
+          <div class="sobre-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Cuidado Especializado</h4>
+                <p>Todos os pets são vacinados, castrados e recebem acompanhamento veterinário completo</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Ambiente Seguro</h4>
+                <p>Instalações modernas e seguras, preparadas para receber seu novo amigo com conforto</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Suporte Pós-Adoção</h4>
+                <p>Acompanhamento completo nos primeiros meses e suporte vitalício para dúvidas</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Certificação e Garantia</h4>
+                <p>Centro certificado com todas as licenças e garantia de procedência dos animais</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sobre-actions">
+            <a href="#pets" class="btn btn-primary">
+              <i class="fas fa-paw"></i> Ver Pets Disponíveis
+            </a>
+            <a href="#tour-virtual" class="btn-link">
+              <i class="fas fa-video"></i> Tour Virtual
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Missão, Visão e Valores -->
+      <div class="mvv-section">
+        <div class="mvv-item" data-aos="fade-up">
+          <div class="mvv-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Nossa Missão</h3>
+          <p>Conectar pets abandonados com famílias amorosas, promovendo a adoção responsável e o bem-estar animal.</p>
+        </div>
+        
+        <div class="mvv-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="mvv-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Nossa Visão</h3>
+          <p>Ser referência nacional em adoção e cuidados com pets, criando um mundo onde nenhum animal fique sem lar.</p>
+        </div>
+        
+        <div class="mvv-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="mvv-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Nossos Valores</h3>
+          <p>Amor, respeito, responsabilidade, transparência e compromisso com a vida e dignidade de todos os animais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Pets Disponíveis (Expandida) -->
+  <section id="pets" class="pets">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Adoção</span>
+        <h2 class="section-title">Pets Esperando por um Lar</h2>
+        <p class="section-subtitle">Todos vacinados, castrados e cheios de amor para dar</p>
+      </div>
+      
+      <!-- Filtros Avançados -->
+      <div class="pets-filters">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="todos">
+            <i class="fas fa-th"></i> Todos
+          </button>
+          <button class="filter-btn" data-filter="cachorro">
+            <i class="fas fa-dog"></i> Cachorros
+          </button>
+          <button class="filter-btn" data-filter="gato">
+            <i class="fas fa-cat"></i> Gatos
+          </button>
+          <button class="filter-btn" data-filter="outros">
+            <i class="fas fa-dove"></i> Outros
+          </button>
+        </div>
+        
+        <!-- Busca -->
+        <div class="pet-search">
+          <i class="fas fa-search"></i>
+          <input type="text" id="pet-search-input" placeholder="Buscar por nome, raça ou característica...">
+        </div>
+        
+        <!-- Ordenação -->
+        <select class="pet-sort" id="pet-sort">
+          <option value="recentes">Mais Recentes</option>
+          <option value="nome">Nome (A-Z)</option>
+          <option value="idade">Idade</option>
+          <option value="porte">Porte</option>
+        </select>
+      </div>
+      
+      <!-- Grid de Pets -->
+      <div class="pet-grid" id="pet-grid">
+        <!-- Card Pet 1 - Max -->
+        <div class="pet-card" data-type="cachorro" data-name="max" data-age="2" data-size="medio">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=600" alt="Max - Golden Retriever">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="max" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="max">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Max</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-dog"></i> Golden Retriever</span>
+              <span><i class="fas fa-birthday-cake"></i> 2 anos</span>
+              <span><i class="fas fa-weight"></i> Médio (25kg)</span>
+              <span><i class="fas fa-mars"></i> Macho</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Dócil</span>
+              <span class="tag">Brincalhão</span>
+              <span class="tag">Bom com crianças</span>
+            </div>
+            <p class="pet-description">
+              Max é um golden retriever super carinhoso e brincalhão. Adora passear no parque
+              e brincar com bolinhas. Perfeito para famílias com crianças!
+            </p>
+            <button class="btn-adopt" data-name="Max">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
         </div>
 
-        <div class="content">
-            <div id="servicos">
-                <h2>Serviços</h2>
-                <p>Tosagem e Banho completo para cães e gatos </p>
-                <h3>Preço: R$ 50,00</h3>
+        <!-- Card Pet 2 - Luna -->
+        <div class="pet-card" data-type="gato" data-name="luna" data-age="1" data-size="pequeno">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=600" alt="Luna - Gata preta">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="luna" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="luna">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
             </div>
-
-            <div id="pets">
-                <h2>Pets</h2>
-                <img src="img/pets.jpg" alt="">
-                <p>Cães</p>
-                <img src="img/gatos.jpg" alt="">
-                <p>Gatos</p>
-                <img src="img/peixes.jpg" alt="">
+          </div>
+          <div class="pet-info">
+            <h3>Luna</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-cat"></i> SRD</span>
+              <span><i class="fas fa-birthday-cake"></i> 1 ano</span>
+              <span><i class="fas fa-weight"></i> Pequeno (3kg)</span>
+              <span><i class="fas fa-venus"></i> Fêmea</span>
             </div>
-
-            <div id="sobre">
-                <h2>Sobre</h2>
-                <p>Um pet center que cuida de cães e gatos.</p>
+            <div class="pet-tags">
+              <span class="tag">Calma</span>
+              <span class="tag">Independente</span>
+              <span class="tag">Apartamento</span>
             </div>
+            <p class="pet-description">
+              Luna é uma gatinha preta elegante e misteriosa. Adora carinho e cochilos ao sol.
+              Ideal para apartamentos e pessoas que buscam companhia tranquila.
+            </p>
+            <button class="btn-adopt" data-name="Luna">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
 
-            <div class="funcionarios">
-                <h1><b>Funcionários:</h1>
-                    <h2>Helena</h2>
-                    <h3>25 anos, profissional no ramo há 2 anos, administra vacinas</h3>
-                    <h2>Fernanda</h2>
-                    <h3>30 anos, profissional no ramo há 3 anos, domina banho</h3>
-                    <h2>João</h2>
-                    <h3>28 anos, profissional no ramo há 1 ano, domina tosagem</h3>
-                    <h2>Maria</h2>
-                    <h3>certificado no ramo, profissional no ramo há 2 anos</h3>
-
-
-                    </b>
+        <!-- Card Pet 3 - Thor -->
+        <div class="pet-card" data-type="cachorro" data-name="thor" data-age="3" data-size="grande">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600" alt="Thor - Labrador">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="thor" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="thor">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
             </div>
+          </div>
+          <div class="pet-info">
+            <h3>Thor</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-dog"></i> Labrador</span>
+              <span><i class="fas fa-birthday-cake"></i> 3 anos</span>
+              <span><i class="fas fa-weight"></i> Grande (35kg)</span>
+              <span><i class="fas fa-mars"></i> Macho</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Protetor</span>
+              <span class="tag">Leal</span>
+              <span class="tag">Energético</span>
+            </div>
+            <p class="pet-description">
+              Thor é um labrador forte e protetor. Excelente cão de guarda e companheiro fiel.
+              Precisa de espaço para correr e família ativa.
+            </p>
+            <button class="btn-adopt" data-name="Thor">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
 
-    </body>
-</html>
+        <!-- Card Pet 4 - Mia -->
+        <div class="pet-card" data-type="gato" data-name="mia" data-age="2" data-size="pequeno">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=600" alt="Mia - Gata branca">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="mia" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="mia">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Mia</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-cat"></i> Persa</span>
+              <span><i class="fas fa-birthday-cake"></i> 2 anos</span>
+              <span><i class="fas fa-weight"></i> Pequeno (4kg)</span>
+              <span><i class="fas fa-venus"></i> Fêmea</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Carinhosa</span>
+              <span class="tag">Pelagem longa</span>
+              <span class="tag">Indoor</span>
+            </div>
+            <p class="pet-description">
+              Mia é uma gata persa de pelagem branca e sedosa. Muito carinhosa e companheira.
+              Requer escovação regular e ambiente tranquilo.
+            </p>
+            <button class="btn-adopt" data-name="Mia">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
+
+        <!-- Card Pet 5 - Bob -->
+        <div class="pet-card urgente" data-type="cachorro" data-name="bob" data-age="5" data-size="medio">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?auto=format&fit=crop&w=600" alt="Bob - Vira-lata">
+            <span class="pet-badge urgente">⚠️ Urgente</span>
+            <button class="pet-favorite" data-pet="bob" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="bob">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Bob</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-dog"></i> Vira-lata</span>
+              <span><i class="fas fa-birthday-cake"></i> 5 anos</span>
+              <span><i class="fas fa-weight"></i> Médio (20kg)</span>
+              <span><i class="fas fa-mars"></i> Macho</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Resgatado</span>
+              <span class="tag">Grato</span>
+              <span class="tag">Precisa de amor</span>
+            </div>
+            <p class="pet-description">
+              Bob foi resgatado das ruas e precisa urgentemente de um lar. Muito grato e amoroso,
+              será o companheiro mais fiel que você já teve!
+            </p>
+            <button class="btn-adopt urgente" data-name="Bob">
+              <i class="fas fa-heart"></i> Adotar Agora!
+            </button>
+          </div>
+        </div>
+
+        <!-- Card Pet 6 - Mel -->
+        <div class="pet-card" data-type="cachorro" data-name="mel" data-age="1" data-size="pequeno">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600" alt="Mel - Yorkshire">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="mel" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="mel">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Mel</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-dog"></i> Yorkshire</span>
+              <span><i class="fas fa-birthday-cake"></i> 1 ano</span>
+              <span><i class="fas fa-weight"></i> Pequeno (3kg)</span>
+              <span><i class="fas fa-venus"></i> Fêmea</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Mini</span>
+              <span class="tag">Alegre</span>
+              <span class="tag">Colo</span>
+            </div>
+            <p class="pet-description">
+              Mel é uma yorkshire mini super alegre e brincalhona. Adora colo e companhia.
+              Perfeita para apartamentos pequenos.
+            </p>
+            <button class="btn-adopt" data-name="Mel">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
+
+        <!-- Card Pet 7 - Felix -->
+        <div class="pet-card" data-type="gato" data-name="felix" data-age="4" data-size="medio">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600" alt="Felix - Gato laranja">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="felix" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="felix">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Felix</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-cat"></i> SRD</span>
+              <span><i class="fas fa-birthday-cake"></i> 4 anos</span>
+              <span><i class="fas fa-weight"></i> Médio (5kg)</span>
+              <span><i class="fas fa-mars"></i> Macho</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Preguiçoso</span>
+              <span class="tag">Comilão</span>
+              <span class="tag">Ronronador</span>
+            </div>
+            <p class="pet-description">
+              Felix é o típico gato laranja: preguiçoso, comilão e extremamente carinhoso.
+              Vai passar horas ronronando no seu colo!
+            </p>
+            <button class="btn-adopt" data-name="Felix">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
+
+        <!-- Card Pet 8 - Pipoca -->
+        <div class="pet-card" data-type="outros" data-name="pipoca" data-age="1" data-size="pequeno">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?auto=format&fit=crop&w=600" alt="Pipoca - Coelho">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="pipoca" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="pipoca">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Pipoca</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-rabbit"></i> Coelho</span>
+              <span><i class="fas fa-birthday-cake"></i> 1 ano</span>
+              <span><i class="fas fa-weight"></i> Pequeno (1kg)</span>
+              <span><i class="fas fa-venus"></i> Fêmea</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Fofinha</span>
+              <span class="tag">Silenciosa</span>
+              <span class="tag">Vegetariana</span>
+            </div>
+            <p class="pet-description">
+              Pipoca é uma coelhinha branca super fofa e silenciosa. Ideal para quem busca
+              um pet diferente e de fácil manutenção.
+            </p>
+            <button class="btn-adopt" data-name="Pipoca">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
+
+        <!-- Card Pet 9 - Duke -->
+        <div class="pet-card" data-type="cachorro" data-name="duke" data-age="6" data-size="grande">
+          <div class="pet-image">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=600" alt="Duke - Husky">
+            <span class="pet-badge disponivel">Disponível</span>
+            <button class="pet-favorite" data-pet="duke" aria-label="Adicionar aos favoritos">
+              <i class="far fa-heart"></i>
+            </button>
+            <div class="pet-overlay">
+              <button class="pet-quick-view" data-pet="duke">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="pet-info">
+            <h3>Duke</h3>
+            <div class="pet-details">
+              <span><i class="fas fa-dog"></i> Husky</span>
+              <span><i class="fas fa-birthday-cake"></i> 6 anos</span>
+              <span><i class="fas fa-weight"></i> Grande (30kg)</span>
+              <span><i class="fas fa-mars"></i> Macho</span>
+            </div>
+            <div class="pet-tags">
+              <span class="tag">Olhos azuis</span>
+              <span class="tag">Falante</span>
+              <span class="tag">Ativo</span>
+            </div>
+            <p class="pet-description">
+              Duke é um husky de olhos azuis penetrantes. Muito "falante" e ativo, precisa de
+              exercícios diários e família com experiência.
+            </p>
+            <button class="btn-adopt" data-name="Duke">
+              <i class="fas fa-heart"></i> Quero Adotar
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mensagem quando não há resultados -->
+      <div class="no-results" id="no-results" style="display: none;">
+        <img src="images/no-results.svg" alt="Sem resultados">
+        <h3>Ops! Nenhum pet encontrado</h3>
+        <p>Tente ajustar os filtros ou fazer uma nova busca</p>
+        <button class="btn btn-primary" onclick="resetFilters()">
+          <i class="fas fa-redo"></i> Limpar Filtros
+        </button>
+      </div>
+      
+      <!-- Botão Ver Mais -->
+      <div class="pets-load-more">
+        <button class="btn btn-outline" id="load-more-pets">
+          <i class="fas fa-plus-circle"></i> Carregar Mais Pets
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Serviços Premium -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag light">Serviços Premium</span>
+        <h2 class="section-title">Cuidamos do Seu Pet com Excelência</h2>
+        <p class="section-subtitle">Serviços profissionais com amor e dedicação</p>
+      </div>
+      
+      <div class="servicos-grid">
+        <!-- Serviço 1 - Banho de Luxo -->
+        <div class="servico-card destaque" data-aos="fade-up">
+          <div class="ribbon">Mais Popular</div>
+          <div class="servico-icon">
+            <i class="fas fa-bath"></i>
+          </div>
+          <h3>Banho de Luxo</h3>
+          <p>Experiência spa completa com produtos premium importados e aromaterapia relaxante</p>
+          <ul class="servico-features">
+            <li><i class="fas fa-check"></i> Hidratação profunda com óleos essenciais</li>
+            <li><i class="fas fa-check"></i> Perfume francês hipoalergênico</li>
+            <li><i class="fas fa-check"></i> Massagem relaxante anti-stress</li>
+            <li><i class="fas fa-check"></i> Limpeza de ouvidos e glândulas</li>
+            <li><i class="fas fa-check"></i> Escovação dental completa</li>
+            <li><i class="fas fa-check"></i> Corte de unhas e lixamento</li>
+          </ul>
+          <div class="servico-preco">
+            <span class="preco-info">a partir de</span>
+            <span class="preco">R$ 120</span>
+            <span class="preco-parcela">ou 3x de R$ 40</span>
+          </div>
+          <button class="btn-agendar destaque" data-servico="Banho de Luxo" data-preco="120">
+            <i class="fas fa-calendar-check"></i> Agendar Agora
+          </button>
+        </div>
+
+        <!-- Serviço 2 - Tosa Profissional -->
+        <div class="servico-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="servico-icon">
+            <i class="fas fa-cut"></i>
+          </div>
+          <h3>Tosa Profissional</h3>
+          <p>Cortes personalizados para todas as raças com técnicas internacionais</p>
+          <ul class="servico-features">
+            <li><i class="fas fa-check"></i> Tosa higiênica especializada</li>
+            <li><i class="fas fa-check"></i> Tosa completa na máquina</li>
+            <li><i class="fas fa-check"></i> Tosa na tesoura artística</li>
+            <li><i class="fas fa-check"></i> Tosa criativa e temática</li>
+            <li><i class="fas fa-check"></i> Tosa padrão de raça</li>
+          </ul>
+          <div class="servico-preco">
+            <span class="preco-info">a partir de</span>
+            <span class="preco">R$ 80</span>
+            <span class="preco-parcela">ou 2x de R$ 40</span>
+          </div>
+          <button class="btn-agendar" data-servico="Tosa Profissional" data-preco="80">
+            <i class="fas fa-calendar-check"></i> Agendar
+          </button>
+        </div>
+
+        <!-- Serviço 3 - Veterinário 24h -->
+        <div class="servico-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="servico-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3>Veterinário 24h</h3>
+          <p>Atendimento emergencial e consultas com especialistas renomados</p>
+          <ul class="servico-features">
+            <li><i class="fas fa-check"></i> Emergência 24 horas</li>
+            <li><i class="fas fa-check"></i> Consultas especializadas</li>
+            <li><i class="fas fa-check"></i> Exames laboratoriais</li>
+            <li><i class="fas fa-check"></i> Cirurgias e internação</li>
+            <li><i class="fas fa-check"></i> Vacinação e vermifugação</li>
+          </ul>
+          <div class="servico-preco">
+            <span class="preco-info">consulta a partir de</span>
+            <span class="preco">R$ 150</span>
+            <span class="preco-parcela">planos mensais disponíveis</span>
+          </div>
+          <button class="btn-agendar" data-servico="Consulta Veterinária" data-preco="150">
+            <i class="fas fa-calendar-check"></i> Agendar
+          </button>
+        </div>
+
+        <!-- Serviço 4 - Adestramento -->
+        <div class="servico-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="servico-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Adestramento</h3>
+          <p>Educação positiva e comportamental com metodologia científica</p>
+          <ul class="servico-features">
+            <li><i class="fas fa-check"></i> Comandos básicos</li>
+            <li><i class="fas fa-check"></i> Correção comportamental</li>
+            <li><i class="fas fa-check"></i> Socialização</li>
+            <li><i class="fas fa-check"></i> Agility e esportes</li>
+            <li><i class="fas fa-check"></i> Terapia comportamental</li>
+          </ul>
+          <div class="servico-preco">
+            <span class="preco-info">pacote mensal</span>
+            <span class="preco">R$ 350</span>
+            <span class="preco-parcela">4 aulas incluídas</span>
+          </div>
+          <button class="btn-agendar" data-servico="Adestramento" data-preco="350">
+            <i class="fas fa-calendar-check"></i> Agendar
+          </button>
+        </div>
+
+        <!-- Serviço 5 - Hotel Pet -->
+        <div class="servico-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="servico-icon">
+            <i class="fas fa-bed"></i>
+          </div>
+          <h3>Hotel Pet 5★</h3>
+          <p>Hospedagem luxuosa com monitoramento 24h e atividades recreativas</p>
+          <ul class="servico-features">
+            <li><i class="fas fa-check"></i> Suítes climatizadas</li>
+            <li><i class="fas fa-check"></i> Câmeras 24 horas</li>
+            <li><i class="fas fa-check"></i> Recreação monitorada</li>
+            <li><i class="fas fa-check"></i> Alimentação premium</li>
+            <li><i class="fas fa-check"></i> Veterinário de plantão</li>
+          </ul>
+          <div class="servico-preco">
+            <span class="preco-info">diária a partir de</span>
+            <span class="preco">R$ 90</span>
+            <span class="preco-parcela">descontos para períodos longos</span>
+          </div>
+          <button class="btn-agendar" data-servico="Hotel Pet" data-preco="90">
+            <i class="fas fa-calendar-check"></i> Reservar
+          </button>
+        </div>
+
+        <!-- Serviço 6 - Pet Táxi -->
+        <div class="servico-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="servico-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Pet Táxi</h3>
+          <p>Transporte seguro e confortável com veículos adaptados</p>
+          <ul class="servico-features">
+            <li><i class="fas fa-check"></i> Veículos climatizados</li>
+            <li><i class="fas fa-check"></i> Motoristas treinados</li>
+            <li><i class="fas fa-check"></i> Caixas de transporte</li>
+            <li><i class="fas fa-check"></i> Seguro incluído</li>
+            <li><i class="fas fa-check"></i> GPS em tempo real</li>
+          </ul>
+          <div class="servico-preco">
+            <span class="preco-info">corrida a partir de</span>
+            <span class="preco">R$ 45</span>
+            <span class="preco-parcela">dentro da cidade</span>
+          </div>
+          <button class="btn-agendar" data-servico="Pet Táxi" data-preco="45">
+            <i class="fas fa-calendar-check"></i> Solicitar
+          </button>
+        </div>
+      </div>
+      
+      <!-- Calculadora de Preços Interativa -->
+      <div class="calculadora-precos" data-aos="fade-up">
+        <h3><i class="fas fa-calculator"></i> Calculadora de Pacotes</h3>
+        <p>Monte o pacote ideal para seu pet e economize!</p>
+        
+        <div class="calculadora-form">
+          <div class="calc-row">
+            <div class="calc-group">
+              <label><i class="fas fa-paw"></i> Tipo de Pet:</label>
+              <select id="calc-tipo">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+            
+            <div class="calc-group">
+              <label><i class="fas fa-weight"></i> Porte do Pet:</label>
+              <select id="calc-porte">
+                <option value="1">Pequeno (até 10kg)</option>
+                <option value="1.3">Médio (10-25kg)</option>
+                <option value="1.6">Grande (acima de 25kg)</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="calc-group">
+            <label><i class="fas fa-check-square"></i> Selecione os serviços desejados:</label>
+            <div class="calc-checkboxes">
+              <label class="calc-checkbox">
+                <input type="checkbox" value="120" data-servico="Banho de Luxo">
+                <span class="checkbox-custom"></span>
+                <span>Banho de Luxo (R$ 120)</span>
+              </label>
+              <label class="calc-checkbox">
+                <input type="checkbox" value="80" data-servico="Tosa">
+                <span class="checkbox-custom"></span>
+                <span>Tosa Profissional (R$ 80)</span>
+              </label>
+              <label class="calc-checkbox">
+                <input type="checkbox" value="150" data-servico="Veterinário">
+                <span class="checkbox-custom"></span>
+                <span>Consulta Veterinária (R$ 150)</span>
+              </label>
+              <label class="calc-checkbox">
+                <input type="checkbox" value="350" data-servico="Adestramento">
+                <span class="checkbox-custom"></span>
+                <span>Pacote Adestramento (R$ 350)</span>
+              </label>
+              <label class="calc-checkbox">
+                <input type="checkbox" value="90" data-servico="Hotel">
+                <span class="checkbox-custom"></span>
+                <span>Diária Hotel (R$ 90)</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="calc-group">
+            <label><i class="fas fa-percentage"></i> Cupom de Desconto:</label>
+            <input type="text" id="calc-cupom" placeholder="Digite o código do cupom">
+          </div>
+          
+          <div class="calc-result">
+            <div class="calc-subtotal">
+              <span>Subtotal:</span>
+              <span class="calc-value">R$ 0,00</span>
+            </div>
+            <div class="calc-discount">
+              <span>Desconto:</span>
+              <span class="calc-value">R$ 0,00</span>
+            </div>
+            <div class="calc-total">
+              <span>Total Estimado:</span>
+              <span class="calc-total-value">R$ 0,00</span>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-calcular" id="btn-agendar-pacote">
+            <i class="fas fa-shopping-cart"></i> Agendar Pacote Completo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Nossa Equipe -->
+  <section id="funcionarios" class="funcionarios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa Equipe</span>
+        <h2 class="section-title">Profissionais Apaixonados pelo que Fazem</h2>
+        <p class="section-subtitle">Especialistas certificados com anos de experiência</p>
+      </div>
+      
+      <div class="funcionarios-grid">
+        <!-- Funcionário 1 -->
+        <div class="funcionario-card" data-aos="flip-left">
+          <div class="funcionario-img">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400" alt="Dra. Ana Silva">
+            <div class="funcionario-overlay">
+              <div class="funcionario-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:ana@petlove.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="funcionario-info">
+            <h3>Dra. Ana Silva</h3>
+            <span class="cargo">Veterinária Chefe</span>
+            <p>15 anos de experiência, especialista em cirurgia e animais exóticos. Mestre em medicina veterinária pela USP.</p>
+            <div class="funcionario-skills">
+              <span class="skill">Cirurgia</span>
+              <span class="skill">Emergência</span>
+              <span class="skill">Dermatologia</span>
+              <span class="skill">Exóticos</span>
+            </div>
+            <div class="funcionario-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-text">5.0 (234 avaliações)</span>
+            </div>
+            <button class="btn-agendar-func" data-func="Dra. Ana Silva">
+              <i class="fas fa-calendar"></i> Agendar Consulta
+            </button>
+          </div>
+        </div>
+
+        <!-- Funcionário 2 -->
+        <div class="funcionario-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="funcionario-img">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400" alt="Dr. Carlos Mendes">
+            <div class="funcionario-overlay">
+              <div class="funcionario-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:carlos@petlove.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="funcionario-info">
+            <h3>Dr. Carlos Mendes</h3>
+            <span class="cargo">Tosador Master</span>
+            <p>Certificado internacional em grooming, especialista em tosas asiáticas. Campeão brasileiro de tosa criativa 2022.</p>
+            <div class="funcionario-skills">
+              <span class="skill">Tosa Criativa</span>
+              <span class="skill">Grooming</span>
+              <span class="skill">Estética</span>
+              <span class="skill">Show</span>
+            </div>
+            <div class="funcionario-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-text">4.9 (189 avaliações)</span>
+            </div>
+            <button class="btn-agendar-func" data-func="Dr. Carlos Mendes">
+              <i class="fas fa-calendar"></i> Agendar Tosa
+            </button>
+          </div>
+        </div>
+
+        <!-- Funcionário 3 -->
+        <div class="funcionario-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="funcionario-img">
+            <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=400" alt="Julia Santos">
+            <div class="funcionario-overlay">
+              <div class="funcionario-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:julia@petlove.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="funcionario-info">
+            <h3>Julia Santos</h3>
+            <span class="cargo">Adestradora Comportamental</span>
+            <p>Especialista em comportamento animal e terapia. Certificada em adestramento positivo pelo Instituto Internacional de Zootecnia.</p>
+            <div class="funcionario-skills">
+              <span class="skill">Adestramento</span>
+              <span class="skill">Comportamento</span>
+              <span class="skill">Terapia</span>
+              <span class="skill">Agility</span>
+            </div>
+            <div class="funcionario-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-text">5.0 (156 avaliações)</span>
+            </div>
+            <button class="btn-agendar-func" data-func="Julia Santos">
+              <i class="fas fa-calendar"></i> Agendar Sessão
+            </button>
+          </div>
+        </div>
+
+        <!-- Funcionário 4 -->
+        <div class="funcionario-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="funcionario-img">
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400" alt="Pedro Costa">
+            <div class="funcionario-overlay">
+              <div class="funcionario-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:pedro@petlove.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="funcionario-info">
+            <h3>Pedro Costa</h3>
+            <span class="cargo">Auxiliar Veterinário Sênior</span>
+            <p>10 anos de experiência em cuidados intensivos. Especialista em primeiros socorros e reabilitação animal.</p>
+            <div class="funcionario-skills">
+              <span class="skill">Enfermagem</span>
+              <span class="skill">UTI</span>
+              <span class="skill">Laboratório</span>
+              <span class="skill">Nutrição</span>
+            </div>
+            <div class="funcionario-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-text">4.0 (98 avaliações)</span>
+            </div>
+            <button class="btn-agendar-func" data-func="Pedro Costa">
+              <i class="fas fa-calendar"></i> Agendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Funcionário 5 -->
+        <div class="funcionario-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="funcionario-img">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400" alt="Dra. Marina Oliveira">
+            <div class="funcionario-overlay">
+              <div class="funcionario-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:marina@petlove.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="funcionario-info">
+            <h3>Dra. Marina Oliveira</h3>
+            <span class="cargo">Veterinária Especialista</span>
+            <p>Especializada em oftalmologia e neurologia veterinária. Pós-graduada em medicina felina.</p>
+            <div class="funcionario-skills">
+              <span class="skill">Oftalmologia</span>
+              <span class="skill">Neurologia</span>
+              <span class="skill">Felinos</span>
+              <span class="skill">Diagnóstico</span>
+            </div>
+            <div class="funcionario-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-text">5.0 (203 avaliações)</span>
+            </div>
+            
